@@ -1,0 +1,52 @@
+@import url(base.css);
+
+body {
+    font-family: sans-serif;
+}
+
+.wrapper {
+    max-width: 80vw;
+    padding: 2rem 1rem;
+    margin: 0 auto;
+}
+
+/* Each colum is a minimum of 300px with a maximum of 1fr */
+#gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+.galleryImg {
+    width: 100%;
+    height: 300px;
+    object-fit:cover;
+    border-radius: 1rem;
+    position: relative;
+    transition: transform 250ms;
+    cursor: pointer;
+}
+
+.galleryImg:hover {
+    transform: translateY(-2px);
+    box-shadow: 3px 3px 10px rgb(196, 196, 196);
+}
+
+#popup {
+    background-color:rgba(0, 0, 0, 0.9);
+    position: absolute;
+    top: 0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-100%);
+    transition: transform 250ms;
+    padding: 1rem;
+}
+
+#selectedImage {
+    max-height: 100%;
+}

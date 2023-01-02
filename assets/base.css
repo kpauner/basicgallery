@@ -1,0 +1,23 @@
+:root {
+    --color-brand-primary: #f5d7a9;
+
+    --color-background-dark:#112429;
+    --color-background-darker:#060d14;
+
+    --color-light: #172e33;
+    --color-lighter: #2d5e66;
+    --color-lightest:#5bbac4;
+
+    --color-brand-grey:#A3AAC2;
+    --color-brand-light:#F6F8F7;
+    --color-white:#fff;
+    --color-error:#f65c78;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-weight: normal;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
